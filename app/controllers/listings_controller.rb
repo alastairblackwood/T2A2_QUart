@@ -1,7 +1,8 @@
 class ListingsController < ApplicationController
 
-
-  before_action :set_listing, only: %i[ show edit update destory ]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :set_listing, only: %i[ show ]
+  before_action :set_user_listing, only: [ :update, :edit, :destroy ]
   before_action :setup_form, only: [:new, :edit]
 
   # GET /listings or /listings.json
