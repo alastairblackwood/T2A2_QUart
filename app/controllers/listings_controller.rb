@@ -1,4 +1,6 @@
 class ListingsController < ApplicationController
+
+
   before_action :set_listing, only: %i[ show edit update destory ]
   before_action :setup_form, only: [:new, :edit]
 
@@ -14,6 +16,7 @@ class ListingsController < ApplicationController
   # GET /listings/new
   def new
     @listing = Listing.new
+    puts current_user.email
   end
 
   # GET /listings/1/edit
@@ -23,7 +26,18 @@ class ListingsController < ApplicationController
   # POST /listings or /listings.json
   def create
     # @listing = Listing.new(listing_params)
+
     @listing = current_user.listings.new(listing_params)
+
+    respond_to do |format|
+      if @listing.save
+        format.html { redirect_to @listing, notice: "Listing was successfully created." }
+        format.json { render :show, status: :created, location: @listing }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @listing.errors, status: :unprocessable_entity }
+      end
+    end
   end
     
   private
@@ -49,6 +63,6 @@ class ListingsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def listing_params
-    params.require(:listing).permit(:name, :picture, :description, :price, :category_id, :condition, feature_ids: [])
+    params.require(:listing).permit(:name, :picture, :description, :price, :category_id, feature_ids: [])
   end
 end

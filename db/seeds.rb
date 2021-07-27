@@ -24,3 +24,8 @@ if Feature.count == 0
     end
 end
 
+if User.count == 0
+    User.create(email: "test@test.com", password: "hunter2", password_confirmation: "hunter2")
+end
+
+
