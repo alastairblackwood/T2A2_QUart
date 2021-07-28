@@ -12,7 +12,7 @@
 
   <body>
     <% flash.each do |type,message|  %>
-      <div class="alert alert-<%= select_alert_type(type) %> >
+      <%# <div class="alert alert-<%= select_alert_type(type) %> > %>
         <%= message %>
       </div>
     <% end %>
