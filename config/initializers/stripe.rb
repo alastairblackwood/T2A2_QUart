@@ -1,2 +1,2 @@
-# # Set up stripe API Keys
-# Stripe.api_key = Rails.application.credentials.dig(:stripe, :secret)
+# Set up stripe API Keys
+Stripe.api_key = Rails.application.credentials.dig(:stripe, :secret_key)

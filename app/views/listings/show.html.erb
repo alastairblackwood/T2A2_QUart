@@ -6,7 +6,6 @@
     </div>
     <div class= 'col-lg-4 p-0 mx-2 d-md-block'>
       <h1 class='mb-sm-2 mb-md-5'><%=@listing.name%></h1>
-      <h4 class='text-muted'>Condition: <%=@listing.condition.capitalize%></h4>
       <% @listing.features.each do |feature| %>
         <span class='badge bg-info text-dark'><%=feature.name%></span>
       <%end%>
@@ -32,7 +31,7 @@
     .querySelector("[data-stripe='payment']")
     .addEventListener("click", () => {
       const stripe = Stripe(
-        "<%= Rails.application.credentials.dig(:stripe, :public) %>"
+        "<%= Rails.application.credentials.dig(:stripe, :public_key) %>"
       )
       stripe.redirectToCheckout({
         sessionId: "<%= @session_id %>"
