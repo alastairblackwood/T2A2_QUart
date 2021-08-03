@@ -35,7 +35,7 @@
   <div class="form-check form-check-line">
     <%= form.collection_check_boxes :feature_ids, @features, :id, :name do |c| %>
       <%= c.label(class: "form-check-label") %>
-      <%# <%= c.check_box(class: "form-check mr-2") %> %>
+      <%= c.check_box(class: "form-check mr-2") %>
     <% end %>
   </div>
 
@@ -43,7 +43,7 @@
   <div class='form-group mb-3'>
     <%= form.label :picture, class: 'form-label' %>
     <%= form.file_field :picture, accepts: "image/png,image/jpg,image/jpeg", class: 'form-control-file' %>
-    <br />
+    <br>
     <small class='form-text text-muted'>PNG, JPG and JPEG only</small>
   </div>
 
@@ -51,3 +51,8 @@
     <%= form.submit %>
   </div>
 <% end %>
+<footer class="copyright">
+            <p>Copyright &#169 QUart 2021 – All rights reserved</p>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="javascript/main.js"></script>

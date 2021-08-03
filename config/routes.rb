@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'payments/webhook'
   devise_for :users
   root to: 'pages#home'
+  # get 'pages#about'
   resources :listings
   post '/payments/webhook', to: 'payments#webhook'
   get 'payments/success', to: 'payments#success'

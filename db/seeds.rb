@@ -8,7 +8,7 @@
 
 
 categories = ["Aboriginal","Figurative", "Landscape", "Life Painting", "Abstract"]
-features = ["Oil Painting", "Acrylic"]
+features = ["Oil Painting", "Acrylic", "Digital"]
 
 if Category.count == 0
     categories.each do |category|
