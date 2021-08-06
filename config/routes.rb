@@ -2,7 +2,10 @@ Rails.application.routes.draw do
   get 'payments/webhook'
   devise_for :users
   root to: 'pages#home'
-  # get 'pages#about'
+  get '/about' => 'pages#about'
+  delete '/users/sign_out' => 'sessions#destroy'
+  get '/users/sign_out' => 'sessions#destroy'
+  resources :sessions
   resources :listings
   post '/payments/webhook', to: 'payments#webhook'
   get 'payments/success', to: 'payments#success'

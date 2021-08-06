@@ -98,6 +98,18 @@ li a {
     overflow: hidden;
 }
 
+.about-container {
+    font-family: $font-stack;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
 .add-cart {
     position: absolute;
     width: 100%;
@@ -375,6 +387,18 @@ button:hover {
         margin-bottom: 10%;
     }
 
+    .about-container {
+        font-family: $font-stack;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-top: 10%;
+        margin-bottom: 14%;
+    }
+
 }
 
 @media (min-width:$tablet) and (max-width:$laptop) {
@@ -387,6 +411,18 @@ button:hover {
         padding: 0;
         margin-top: 10%;
         margin-bottom: 10%;
+    }
+
+    .about-container {
+        font-family: $font-stack;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 35%;
+        margin-bottom: 35%;
     }
 
     .copyright {

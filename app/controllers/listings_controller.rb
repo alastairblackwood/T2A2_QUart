@@ -92,6 +92,13 @@ class ListingsController < ApplicationController
     end
   end
 
+#   def destroy
+#     User.find(session[:user_id]).destroy      
+#     session[:user_id] = nil         
+#     redirect_to '/forsale' 
+#   end  
+# end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_listing
