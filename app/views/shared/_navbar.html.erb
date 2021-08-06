@@ -10,9 +10,10 @@
             <% if user_signed_in? %>
                 <li class="navbar-item mr-5-lg">
                     <%= link_to "Create Listing", new_listing_path, class: "nav-link" %>
+                    <span class='nav-greeting'> <%= "Welcome back, #{current_user.email}"%> </span>
                 </li>
                 <li class="navbar-item mr-5-lg">
-                    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+                    <%= link_to "Sign Out", destroy_user_session_path, method: "delete", class: "nav-link" %>
                 </li>
             <% else %>
                 <li class="navbar-item mr-5-lg">

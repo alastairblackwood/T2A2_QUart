@@ -16,6 +16,14 @@ $phone:480px;
     box-shadow: 0 24px 36px rgba(0,0,0,0.11);
 }
 
+.container-fluid {
+    font-family: $font-stack;
+}
+
+.navbar-nav {
+    font-family: $font-stack;
+}
+
 /*.overlay {
     position: absolute;
     z-index: 1;

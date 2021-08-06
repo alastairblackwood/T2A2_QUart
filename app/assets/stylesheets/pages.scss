@@ -110,6 +110,18 @@ li a {
     margin-bottom: 15%;
 }
 
+.restricted-container {
+    font-family: $font-stack;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 15%; 
+}
+
 .add-cart {
     position: absolute;
     width: 100%;
@@ -383,8 +395,8 @@ button:hover {
         display: flex;
         justify-content: center;
         padding: 0;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-top: 8%;
+        margin-bottom: 8%;
     }
 
     .about-container {
@@ -397,6 +409,18 @@ button:hover {
         padding-right: 20%;
         margin-top: 10%;
         margin-bottom: 14%;
+    }
+
+    .restricted-container {
+        font-family: $font-stack;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding-left: 35%;
+        padding-right: 35%;
+        margin-top: 10%;
+        margin-bottom: 15%; 
     }
 
 }
@@ -423,6 +447,18 @@ button:hover {
         padding-right: 5%;
         margin-top: 35%;
         margin-bottom: 35%;
+    }
+
+    .restricted-container {
+        font-family: $font-stack;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-top: 10%;
+        margin-bottom: 15%; 
     }
 
     .copyright {
