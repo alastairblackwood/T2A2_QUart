@@ -8,8 +8,8 @@
 // import * as ActiveStorage from "@rails/activestorage"
 // import "channels"
 
-// // import "bootstrap"
-// // // require("@rails/ujs").start()
+// import "bootstrap"
+// require("@rails/ujs").start()
 
 // Rails.start()
 // Turbolinks.start()

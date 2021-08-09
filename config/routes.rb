@@ -3,12 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
 
+  resources :listings
   get '/about' => 'pages#about'
   get '/restricted', to: 'pages#restricted', as: 'restricted'
-  delete '/users/sign_out' => 'sessions#destroy'
-  get '/users/sign_out' => 'sessions#destroy'
-  resources :sessions
-  resources :listings
 
   post '/payments/webhook', to: 'payments#webhook'
   get 'payments/success', to: 'payments#success'
