@@ -2,5 +2,5 @@
 
 <p>You purchased <%= @listing.name %> </p>
 
-<p>Here is your receipt:</p>
-<%= link_to "Receipt", @purchase.receipt_url, target: :_blank %>
+<p>Congratulations, you paid. <%= @listing.price %> </p>
+<%# <%= link_to "Receipt", @purchase.receipt_url, target: :_blank %>
