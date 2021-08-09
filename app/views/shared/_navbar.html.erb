@@ -13,7 +13,7 @@
                     <span class='nav-greeting'> <%= "Welcome back, #{current_user.email}"%> </span>
                 </li>
                 <li class="navbar-item mr-5-lg">
-                    <%= link_to "Sign Out", destroy_user_session_path, method: "delete", class: "nav-link" %>
+                    <%= button_to "Sign Out", destroy_user_session_path, :method => :delete, class: "nav-link" %>
                 </li>
             <% else %>
                 <li class="navbar-item mr-5-lg">
