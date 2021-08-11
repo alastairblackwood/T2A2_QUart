@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 $primary-color: white;
 $font-stack: 'Reenie Beanie', cursive, sans-serif;
 $desktop:1200px;
@@ -37,6 +38,13 @@ $phone:480px;
     background-color: gainsboro;
 }*/
 
+h1 {
+    font-style: $font-stack;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 h2 {
     font-style: $font-stack;
     display: flex;
@@ -48,6 +56,10 @@ h5 {
     font-style: $font-stack;
 }
 
+.quart-logo {
+    font-size: 70px;
+}
+
 .navbar {
     position: absolute;
     top: 0;
@@ -55,7 +67,6 @@ h5 {
     left: 0;
     z-index: 2;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 50px 60px 0 60px;
     font-family: $font-stack;
@@ -83,6 +94,8 @@ li a {
     padding: none;
     background-color: #a3d2ca;
     text-decoration: none;
+    font-family: $font-stack;
+    font-size: 20px;
 }
 
 .cart ion-icon {
