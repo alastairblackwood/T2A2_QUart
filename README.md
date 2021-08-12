@@ -77,6 +77,9 @@ The tech stack I have used for the app incorporates HTML, CSS & SASS, Ruby on Ra
 
 <br>
 
+Sitemap
+![Sitemap](app/assets/images/QUart_sitemap.png)
+
 <br>
 
 Homepage

@@ -338,6 +338,14 @@ button:hover {
     background-color: #a3d2ca;
 }
 
+.payment-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
 .copyright {
     font-family: $font-stack;
     position: absolute;
